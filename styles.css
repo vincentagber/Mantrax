@@ -1,0 +1,181 @@
+
+/* General Styles for Mobile Devices */
+@media (max-width: 1200px) {
+    /* Adjust large desktop to smaller desktop or tablet views */
+    #team h2, #contact h2 {
+        font-size: 2.5rem; /* Reduce heading size for medium screens */
+    }
+
+    .btn {
+        font-size: 1rem; /* Slightly reduce button font size */
+    }
+
+    /* Adjust form field size */
+    .form-control {
+        font-size: 0.95rem;
+        padding: 0.75rem;
+    }
+
+    .list-unstyled li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Adjust for tablets and small laptops */
+    .container {
+        padding: 0 20px;
+    }
+
+    h2, .lead {
+        font-size: 2.2rem;
+        line-height: 1.2; /* Adjust line-height for better readability */
+    }
+
+    /* Reduce padding and margin for form inputs */
+    .form-control {
+        padding: 0.7rem;
+    }
+
+    #team img {
+        width: 130px; /* Reduce team image size */
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For small tablets and large phones */
+    h2, .display-4 {
+        font-size: 1.8rem; /* Further reduce heading size */
+    }
+
+    p, .lead, .list-unstyled li {
+        font-size: 1rem; /* Standardize paragraph size */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Shrink button font size for smaller screens */
+    }
+
+    /* Stack team members vertically */
+    #team .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    #contact form {
+        margin-top: 30px; /* Separate form from contact details */
+    }
+}
+
+@media (max-width: 576px) {
+    /* For small phones */
+    .container {
+        padding: 0 10px; /* Reduce container padding */
+    }
+
+    h2, .display-4 {
+        font-size: 1.6rem; /* Further shrink headings */
+        text-align: center;
+    }
+
+    .lead {
+        font-size: 0.95rem; /* Reduce lead text size */
+    }
+
+    /* Center-align text for mobile screens */
+    #team .col-md-4, #contact .col-md-6 {
+        text-align: center;
+    }
+
+    #team img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Contact form adjustments */
+    .form-control {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Extra small devices */
+    h2, .display-4 {
+        font-size: 1.4rem;
+    }
+
+    p, .lead {
+        font-size: 0.9rem; /* Smaller text for very small screens */
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Further reduce team image size */
+    #team img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+     /* Custom Styles */
+     .navbar {
+        background-color: #f8f9fa;
+        padding: 1rem;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    .hero {
+        background: url('/images/home.jpeg') no-repeat center center/cover;
+        color: white;
+        padding: 100px 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .hero .btn {
+        background-color: #007bff;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+
+    #overview img {
+        border-radius: 10px;
+    }
+
+    #careers .btn {
+        background-color: #28a745;
+    }
+
+    #team img {
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+    }
