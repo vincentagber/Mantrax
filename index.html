@@ -99,7 +99,7 @@
                             success in a rapidly evolving digital landscape.
                         </p>
                         <a href="#careers" class="btn btn-outline-primary px-4 py-2 mt-3"
-                            style="border-width: 2px; border-radius: 25px; font-weight: bold;">Learn More</a>
+                            style="border-width: 2px; border-radius: 25px; font-weight: bold;">Learn More</a></br>
                     </div>
                     <div class="col-md-6 text-center">
                         <img src="/images/about2.jpeg" class="img-fluid rounded shadow-lg" alt="Remote Work"
@@ -202,8 +202,8 @@
                                         me. I’m more productive without the distractions of an office environment, and
                                         I’ve
                                         been able to spend more time with my family without sacrificing my career."</p>
-                                    <footer class="blockquote-footer">Sarah, <cite title="Source Title">Graphic
-                                            Designer</cite></footer>
+                                    <footer class="blockquote-footer">Sarah, <cite title="Source Title">Software
+                                            engineer and marketing</cite></footer>
                                 </blockquote>
                             </div>
                         </div>
@@ -257,10 +257,13 @@
                     <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm" style="background-color: #fff; border-radius: 10px;">
                             <div class="card-body">
-                                <h5 class="card-title" style="color: #043161;">Remote Project Manager</h5>
-                                <p class="card-text" style="color: #6c757d;">Lead and manage remote teams across
-                                    different time zones. Ensure project deadlines are met and deliverables are of high
-                                    quality.</p>
+                                <h5 class="card-title" style="color: #043161;">Data Entry</h5>
+                                <p class="card-text" style="color: #6c757d;">Inputting, updating, and maintaining
+                                    accurate records in databases or systems.
+
+                                    Ensuring data accuracy and correcting errors.
+
+                                    Organizing and managing files for easy retrieval.</p>
                                 <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal"
                                     onclick="setPosition('Remote Project Manager')">Apply Now</a>
                             </div>
@@ -271,10 +274,13 @@
                     <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm" style="background-color: #fff; border-radius: 10px;">
                             <div class="card-body">
-                                <h5 class="card-title" style="color: #043161;">Remote Software Developer</h5>
-                                <p class="card-text" style="color: #6c757d;">Work on innovative software projects and
-                                    collaborate with a team of talented developers. Bring your coding skills to the
-                                    forefront in a flexible work environment.</p>
+                                <h5 class="card-title" style="color: #043161;">Data Administrator</h5>
+                                <p class="card-text" style="color: #6c757d;">Managing and securing databases to ensure
+                                    smooth operations.
+
+                                    Implementing data management policies and procedures.
+
+                                    Monitoring system performance and resolving database issues.</p>
                                 <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal"
                                     onclick="setPosition('Remote Software Developer')">Apply Now</a>
                             </div>
@@ -285,10 +291,14 @@
                     <div class="col-md-4 mb-4">
                         <div class="card border-0 shadow-sm" style="background-color: #fff; border-radius: 10px;">
                             <div class="card-body">
-                                <h5 class="card-title" style="color: #043161;">Remote Marketing Specialist</h5>
-                                <p class="card-text" style="color: #6c757d;">Create and execute marketing strategies
-                                    that drive results. Work with a dynamic team to enhance brand visibility and
-                                    engagement.</p>
+                                <h5 class="card-title" style="color: #043161;">Data Analyst</h5>
+                                <p class="card-text" style="color: #6c757d;">Collecting, cleaning, and analyzing data to
+                                    identify patterns and trends.
+
+                                    Creating reports, visualizations, and dashboards to communicate insights.
+
+                                    Supporting decision-making by providing actionable recommendations.
+                                </p>
                                 <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal"
                                     onclick="setPosition('Remote Marketing Specialist')">Apply Now</a>
                             </div>
@@ -298,35 +308,63 @@
             </div>
         </section>
 
-        <!-- Modal for Application Form -->
-        <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="applyModalLabel">Job Application</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- Modal for Application Form -->
+<div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="applyModalLabel">Job Application</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form id="applicationForm" action="send_email.php" method="POST" enctype="multipart/form-data">
+                    <!-- Full Name -->
+                    <div class="mb-3">
+                        <label for="applicantName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="applicantName" name="applicantName" required>
                     </div>
-                    <div class="modal-body">
-                        <form id="applicationForm" action="send_email.php" method="POST" enctype="multipart/form-data">
-                            <div class="mb-3">
-                                <label for="applicantName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="applicantName" name="applicantName"
-                                    required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="position" class="form-label">Position</label>
-                                <input type="text" class="form-control" id="position" name="position" required readonly>
-                            </div>
-                            <div class="mb-3">
-                                <label for="cv" class="form-label">Upload CV</label>
-                                <input type="file" class="form-control" id="cv" name="cv" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit Application</button>
-                        </form>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                </div>
+
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" name="address" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+
+                    <!-- Position -->
+                    <div class="mb-3">
+                        <label for="position" class="form-label">Position</label>
+                        <input type="text" class="form-control" id="position" name="position" required readonly>
+                    </div>
+
+                    <!-- Upload ID (Optional) -->
+                    <div class="mb-3">
+                        <label for="uploadId" class="form-label">Upload ID (Optional)</label>
+                        <input type="file" class="form-control" id="uploadId" name="uploadId">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                </form>
             </div>
         </div>
+    </div>
+</div>
+
 
         <!-- JavaScript -->
         <script>
@@ -347,8 +385,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-md-4 text-center">
-                        <img src="/images/Kawamara.jpeg" class="rounded-circle mb-3 shadow" alt="Daniel Frady Moore"
-                            width="180" height="180">
+
                         <h4 style="font-weight: bold; color: #000000;">Daniel Frady Moore</h4>
                         <p style="color: #000000;">CEO</p>
                     </div>
@@ -396,8 +433,7 @@
                         <p style="color: #6c757d;">Remote City, RC 12345</p>
                         <p style="color: #6c757d;">Email: <a href="mailto:info@mantraxglobal.com"
                                 style="color: #043161;">info@mantraxglobalservices.com</a></p>
-                        <p style="color: #6c757d;">Phone: <a href="tel:+14175826486" style="color: #043161;">+1 417 582
-                                6486
+                        <p style="color: #6c757d;">Phone: <a href="tel:+14175826486" style="color: #043161;">+4174298052
                                 (text only)</a></p>
                     </div>
                 </div>
@@ -437,7 +473,7 @@
                 </div>
                 <div class="text-center mt-5">
                     <hr>
-                    <p class="small">&copy; 2024 Mantrax Global Services. All Rights Reserved.</p>
+                    <p class="small">&copy; 2000 Mantrax Global Services. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
