@@ -308,62 +308,63 @@
             </div>
         </section>
 
-<!-- Modal for Application Form -->
-<div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h5 class="modal-title" id="applyModalLabel">Job Application</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <!-- Modal Body -->
-            <div class="modal-body">
-                <form id="applicationForm" action="send_email.php" method="POST" enctype="multipart/form-data">
-                    <!-- Full Name -->
-                    <div class="mb-3">
-                        <label for="applicantName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="applicantName" name="applicantName" required>
+        <!-- Modal for Application Form -->
+        <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="applyModalLabel">Job Application</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <!-- Email -->
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form id="applicationForm" action="send_email.php" method="POST" enctype="multipart/form-data">
+                            <!-- Full Name -->
+                            <div class="mb-3">
+                                <label for="applicantName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="applicantName" name="applicantName"
+                                    required>
+                            </div>
 
-                    <!-- Address -->
-                    <div class="mb-3">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="address" name="address" required>
-                    </div>
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
 
-                    <!-- Phone -->
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Phone</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
-                    </div>
+                            <!-- Address -->
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" name="address" required>
+                            </div>
 
-                    <!-- Position -->
-                    <div class="mb-3">
-                        <label for="position" class="form-label">Position</label>
-                        <input type="text" class="form-control" id="position" name="position" required readonly>
-                    </div>
+                            <!-- Phone -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
 
-                    <!-- Upload ID (Optional) -->
-                    <div class="mb-3">
-                        <label for="uploadId" class="form-label">Upload ID (Optional)</label>
-                        <input type="file" class="form-control" id="uploadId" name="uploadId">
-                    </div>
+                            <!-- Position (Editable) -->
+                            <div class="mb-3">
+                                <label for="position" class="form-label">Position</label>
+                                <input type="text" class="form-control" id="position" name="position" required>
+                            </div>
 
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn btn-primary w-100">Submit Application</button>
-                </form>
+                            <!-- Upload ID (Optional) -->
+                            <div class="mb-3">
+                                <label for="uploadId" class="form-label">Upload ID (Optional)</label>
+                                <input type="file" class="form-control" id="uploadId" name="uploadId">
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
 
         <!-- JavaScript -->
